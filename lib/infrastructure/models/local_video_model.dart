@@ -15,7 +15,7 @@ class LocalVideoModel {
         views: json['views'] ?? 0
       );
 
-  VideoPost toVideoPostEmtity() => VideoPost(
+  VideoPost toVideoPostEntity() => VideoPost(
     caption: name,
     videoUrl: videoUrl,
     likes: likes,

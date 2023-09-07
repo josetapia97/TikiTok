@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => DiscoverProvider())
+        ChangeNotifierProvider(create: (_) => DiscoverProvider()..loadNextPage()) //metodo cascada, que hace referencia al objeto principal
       ],
       child: MaterialApp(
         title: 'Toktik',
