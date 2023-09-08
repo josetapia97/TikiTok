@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toktik/presentation/screens/discover/widgets/shared/video/video_background.dart';
 import 'package:toktik/shared/data/local_video_posts.dart';
 import 'package:video_player/video_player.dart';
 
@@ -57,6 +58,9 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
                 VideoPlayer(controller),
 
                 //todo: gradiente
+                VideoBackground(
+                  stops: const [0.8,1.0],
+                ),
 
                 //todo: texto
                 Positioned(
